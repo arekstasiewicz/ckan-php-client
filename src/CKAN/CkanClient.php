@@ -519,6 +519,8 @@ class CkanClient
     /**
      * TET - Gets list of roles and categories with counts
      *
+     * @param $data
+     * 
      * @return mixed
      * @link #
      */
@@ -533,4 +535,22 @@ class CkanClient
         );
     }
 
+    /**
+     * TET - Get metadata schema
+     *
+     * @param $data
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function tet_getschema(array $data)
+    {
+        $data = json_encode($data, JSON_PRETTY_PRINT);
+
+        return $this->make_request(
+            'POST',
+            'util/tet/getschema',
+            $data
+        );
+    }
 }
