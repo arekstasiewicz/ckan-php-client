@@ -1,5 +1,5 @@
 {
-  "name": "gsa/ckan-php-client",
+  "name": "arekstasiewicz/ckan-php-client",
   "description": "CKAN php client by GSA",
   "minimum-stability": "dev",
   "license": "GPL-3.0+",
