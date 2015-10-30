@@ -526,7 +526,7 @@ class CkanClient
      */
     public function tet_getconfig()
     {
-        $data = json_encode($data, JSON_PRETTY_PRINT);
+        // $data = json_encode($data, JSON_PRETTY_PRINT);
 
         return $this->make_request(
             'POST',
@@ -544,7 +544,7 @@ class CkanClient
      */
     public function tet_getschema()
     {
-        $data = json_encode($data, JSON_PRETTY_PRINT);
+        // $data = json_encode($data, JSON_PRETTY_PRINT);
 
         return $this->make_request(
             'POST',
