@@ -519,38 +519,36 @@ class CkanClient
     /**
      * TET - Gets list of roles and categories with counts
      *
-     * @param $data
+     * @param 
      * 
      * @return mixed
      * @link #
      */
-    public function tet_getconfig(array $data)
+    public function tet_getconfig()
     {
         $data = json_encode($data, JSON_PRETTY_PRINT);
 
         return $this->make_request(
             'POST',
-            '/util/tet/getconfig',
-            $data
+            '/util/tet/getconfig'
         );
     }
 
     /**
      * TET - Get metadata schema
      *
-     * @param $data
+     * @param
      * 
      * @return mixed
      * @link #
      */
-    public function tet_getschema(array $data)
+    public function tet_getschema()
     {
         $data = json_encode($data, JSON_PRETTY_PRINT);
 
         return $this->make_request(
             'POST',
-            'util/tet/getschema',
-            $data
+            'util/tet/getschema'
         );
     }
 }
