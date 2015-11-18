@@ -551,4 +551,21 @@ class CkanClient
             'util/tet/getschema'
         );
     }
+
+    /**
+     * TET - Get stats datastets count
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_dataset_count()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/dataset_count'
+        );
+    }
 }
