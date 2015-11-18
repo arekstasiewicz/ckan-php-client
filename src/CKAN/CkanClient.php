@@ -553,7 +553,7 @@ class CkanClient
     }
 
     /**
-     * TET - Get stats datastets count
+     * TET - get stats - datastets count
      *
      * @param
      * 
@@ -568,4 +568,124 @@ class CkanClient
             'stats/dataset_count'
         );
     }
+
+    /**
+     * TET - get stats - group count
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_group_count()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/group_count'
+        );
+    }
+
+    /**
+     * TET - get stats - organization count
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_organization_count()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/organization_count'
+        );
+    }
+
+    /**
+     * TET - get stats top rated packages
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_top_rated_packages()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/top_rated_packages'
+        );
+    }
+
+    /**
+     * TET - get stats - most edited packages
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_most_edited_packages()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/most_edited_packages'
+        );
+    }
+
+    /**
+     * TET - get stats - largest groups
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_largest_groups()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/largest_groups'
+        );
+    }
+
+    /**
+     * TET - get stats - top tags
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_top_tags()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/top_tags'
+        );
+    }
+
+    /**
+     * TET - get stats - top package creators
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function stats_top_package_creators()
+    {
+
+        return $this->make_request(
+            'POST',
+            'stats/top_package_creators'
+        );
+    }
+
 }
