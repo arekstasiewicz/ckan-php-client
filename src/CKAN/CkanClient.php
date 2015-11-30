@@ -553,6 +553,23 @@ class CkanClient
     }
 
     /**
+     * TET - Get recommended datasets for user
+     *
+     * @param
+     * 
+     * @return mixed
+     * @link #
+     */
+    public function tet_get_recommended_datasets_for_user()
+    {
+
+        return $this->make_request(
+            'POST',
+            'util/tet/get_recommended_datasets_for_user'
+        );
+    }
+
+    /**
      * TET - get stats - datastets count
      *
      * @param
